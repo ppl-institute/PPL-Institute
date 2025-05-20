@@ -7,6 +7,20 @@ body {
   color: #111;
 }
 
+
+.notice-box {
+  background-color: #fffacc; /* faint yellow */
+  border: 1px solid #000000;
+  padding: 15px 20px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
 /* Header section */
 header {
   background-color: #f7f7f7;
