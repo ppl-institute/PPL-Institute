@@ -1,0 +1,214 @@
+/* Base styles */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #111;
+}
+
+
+.notice-box {
+  background-color: #fffacc;
+  /* faint yellow */
+  border: 1px solid #000000;
+  padding: 15px 20px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Header section */
+header {
+  background-color: #F5F5F5;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+/* Main title */
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 12px;
+  color: #555;
+  font-style: italic;
+}
+
+/* Subhead styling */
+.subhead {
+  font-size: 1rem;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* Navigation menu */
+nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.5rem 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content area */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.centered-heading {
+  text-align: center;
+}
+
+/* Logo image */
+.logo {
+  max-width: 200px;
+  display: block;
+  margin: 1rem auto;
+}
+
+Survey list styling ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: 1rem;
+    /* or 16px, adjust as needed */
+  }
+
+  /* Add this to create the top border bar */
+  .top-bar {
+    height: 4px;
+    background-color: #000;
+  }
+
+  /* Optional: for spacing between the bar and the menu */
+  nav {
+    margin-top: 0;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+
+  /* Link color */
+  a {
+    color: #0645ad;
+  }
+}
+
+/* NEW CODE!*/
+
+.survey-section {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.survey-card {
+  background: #F5F5F5;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 240px;
+  height: 160px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.survey-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.survey-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.survey-card h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #000;
+}
+
+.survey-card p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.team-photo {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-info h3 {
+  margin: 0 0 0rem;
+  font-size: 1.25rem;
+}
+
+.team-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.centered-heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
