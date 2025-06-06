@@ -71,12 +71,14 @@ nav {
 nav a {
   text-decoration: none;
   color: #333;
+  font-size: 0.9rem;       
+  padding: 0.3rem 0.5rem;  
   font-weight: 600;
-  padding: 0.4rem 0.6rem;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
   font-family: 'Arial', sans-serif;
 }
+
 
 nav a:hover {
   background-color: #d0e0ee;
@@ -171,14 +173,16 @@ form input[type="email"] {
   border-radius: 4px;
 }
 
-/* Responsive design */
 @media (max-width: 600px) {
   nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
+    flex-direction: row;        
+    flex-wrap: wrap;        
+    justify-content: center; 
+    gap: 0.5rem;          
+    padding: 0.5rem 1rem;   
   }
+
+
 
   input[type="email"] {
     width: 90%;
