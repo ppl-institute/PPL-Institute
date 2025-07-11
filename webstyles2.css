@@ -483,8 +483,7 @@ main h3 {
   width: 100%;
   max-width: 100%;
   height: 600px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; /* for smooth iOS scrolling */
+  overflow: hidden;
   border: 1px solid #ccc;
 }
 
@@ -494,4 +493,8 @@ main h3 {
   border: none;
 }
 
-
+@media (max-width: 600px) {
+  .pdf-container {
+    height: 400px;
+  }
+}
