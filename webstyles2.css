@@ -498,3 +498,18 @@ main h3 {
     height: 400px;
   }
 }
+
+
+
+.center-instagram {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  margin: 20px 0;          /* Optional spacing above/below */
+}
+
+.instagram-media {
+  max-width: 540px; /* Instagram’s recommended max width */
+  width: 100%;      /* Let it shrink on smaller screens */
+}
+
+
