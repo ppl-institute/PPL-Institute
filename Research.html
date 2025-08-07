@@ -159,32 +159,21 @@
   let lastScrollTop = 0;
   const menu = document.querySelector('.menu-links');
   const toggleBtn = document.querySelector('.menu-toggle');
-  let manualToggle = false;
 
   function toggleMenu() {
     menu.classList.toggle('show');
-    manualToggle = menu.classList.contains('show');
   }
 
   window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (currentScroll > lastScrollTop) {
-      // Scrolling down
-      if (menu.classList.contains('show')) {
-        menu.classList.remove('show');
-        manualToggle = false;
-      }
-    } else {
-      // Scrolling up
-      if (!menu.classList.contains('show') && !manualToggle) {
-        menu.classList.add('show');
-      }
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop && menu.classList.contains('show')) {
+      // Scrolling down -> collapse menu
+      menu.classList.remove('show');
     }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // avoid negative
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // avoid negative scroll
   });
 </script>
+
 
 <script>
     function openModal(id) {
