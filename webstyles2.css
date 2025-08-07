@@ -766,11 +766,34 @@ main h3 {
 
 
 
+/* Show desktop menu only on larger screens */
+.desktop-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-top: 1px solid #d7d3d3;
+  border-bottom: 1px solid #ccc;
+  background-color: #d8e6f2;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
 
+/* Hide mobile menu by default */
+.mobile-menu {
+  display: none;
+}
 
-/* Mobile collapsible menu */
+/* When screen is 600px or less, hide desktop menu and show mobile menu */
 @media (max-width: 600px) {
+  .desktop-menu {
+    display: none;
+  }
+
   .mobile-menu {
+    display: block;
     position: sticky;
     top: 0;
     z-index: 1000;
