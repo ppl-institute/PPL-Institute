@@ -759,3 +759,53 @@ main h3 {
   text-align: center;
   position: relative;
 }
+
+
+
+
+
+
+
+
+
+/* Mobile collapsible menu */
+@media (max-width: 600px) {
+  .mobile-menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #d8e6f2;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .menu-toggle {
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #0077cc;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    transition: max-height 0.3s ease;
+  }
+
+  .menu-links.show {
+    display: flex;
+  }
+
+  .menu-links a {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
