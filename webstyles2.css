@@ -765,7 +765,6 @@ main h3 {
 
 
 
-
 /* Show desktop menu only on larger screens */
 .desktop-menu {
   display: flex;
@@ -831,4 +830,6 @@ main h3 {
     font-size: 0.95rem;
     text-align: center;
   }
+}
+
 }
