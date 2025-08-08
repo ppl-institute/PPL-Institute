@@ -57,5 +57,23 @@
     </p>
     <p>&copy; 2025 PPL Institute. All rights reserved.</p>
   </footer>
+  <script>
+  let lastScrollTop = 0;
+  const menu = document.querySelector('.menu-links');
+  const toggleBtn = document.querySelector('.menu-toggle');
+
+  function toggleMenu() {
+    menu.classList.toggle('show');
+  }
+
+  window.addEventListener('scroll', () => {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop && menu.classList.contains('show')) {
+      // Scrolling down -> collapse menu
+      menu.classList.remove('show');
+    }
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // avoid negative scroll
+  });
+</script>
 </body>
 </html>
