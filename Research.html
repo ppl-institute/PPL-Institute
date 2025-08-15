@@ -49,9 +49,35 @@
         the consent form at the beginning of each survey.</p>
     </section>
 
-   
+     <section class="survey-section">
+
    <!-- Survey Card -->
-      <div class="survey-card" onclick="openModal('modal2')">
+    <div class="survey-card" onclick="openModal('modal2')">
+        <h3>The ppl's plates: Submission Form</h3>
+        <p class="card-snippet">
+          The ppl's plate is a public health initiative to promote nutrional awareness and conscientious eating habits.
+          This survey is a submission form for people to share their favorite, day to day, meals. In submitting a meal, you
+          agree to have your meal shared on our social media page, and wish to show the people what other real people are eating.
+        </p>
+      </div>
+
+  <!-- Modal -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2>The ppl's plates: Submission Form</h2>
+      <p>
+       The ppl's plate is a public health initiative to promote nutrional awareness and conscientious eating habits.
+          This survey is a submission form for people to share their favorite, day to day, meals. In submitting a meal, you
+          agree to have your meal shared on our social media page, and wish to show the people what other real people are eating.
+      </p>
+      <p><strong>Estimated time:</strong> ~ 20 minutes</p>
+      <a class="modal-button" href="https://forms.gle/umiuUi4QW7R697bn9" target="_blank">Submit a recipe</a>
+    </div>   
+  </div>
+   
+   
+   <div class="survey-card" onclick="openModal('modal')">
         <h3>Social media Posts: People vs. AI</h3>
         <p class="card-snippet">
           This study explores whether individuals can distinguish between social media posts 
@@ -62,9 +88,9 @@
       </div>
 
   <!-- Modal -->
-  <div id="modal2" class="modal">
+  <div id="modal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <span class="close" onclick="closeModal('modal')">&times;</span>
       <h2>Social media Posts: People vs. AI</h2>
       <p>
        This study explores whether individuals can distinguish between social media posts 
@@ -77,9 +103,11 @@
         <a class="modal-button" href="Who-Are-You-Talking-To-The-Discernment-of-AI-and-Human-Content-on-Social-Media.html" style="background-color:#444; margin-left: 0.5rem;">Read Report</a>
         </div>
   </div>
+  </section>
 
 
-   
+
+    
 
     <h2 class="centered-heading">Research Board</h2>
     <section>
