@@ -833,3 +833,13 @@ main h3 {
 }
 
 }
+
+
+
+.photo-credit {
+  font-size: 0.75rem;   /* smaller text */
+  color: #555;          /* dark grey */
+  opacity: 0.6;         /* nearly translucent */
+  margin-top: 8px;      /* optional spacing */
+}
+
