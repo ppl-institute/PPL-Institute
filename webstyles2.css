@@ -837,15 +837,14 @@ main h3 {
 
 
 .photo-credit {
-  font-size: 0.75rem;   /* smaller text */
+  font-size: 0.65rem;   /* smaller text */
   color: #555;          /* dark grey */
-  opacity: 0.3;         /* faded */
+  opacity: 0.25;         /* faded */
   margin-top: 8px;      /* optional spacing */
 }
 
 .photo-credit a {
-  color: #555;          /* make links same grey */
-  opacity: 0.3;         /* faded like the text */
+  color: inherit;       /* inherit faded grey from parent */
   text-decoration: none; /* optional: remove underline */
 }
 
