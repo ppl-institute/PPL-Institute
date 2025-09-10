@@ -839,7 +839,19 @@ main h3 {
 .photo-credit {
   font-size: 0.75rem;   /* smaller text */
   color: #555;          /* dark grey */
-  opacity: 0.6;         /* nearly translucent */
+  opacity: 0.3;         /* faded */
   margin-top: 8px;      /* optional spacing */
 }
+
+.photo-credit a {
+  color: #555;          /* make links same grey */
+  opacity: 0.3;         /* faded like the text */
+  text-decoration: none; /* optional: remove underline */
+}
+
+.photo-credit a:hover {
+  opacity: 0.5;         /* slightly more visible on hover */
+  text-decoration: underline; /* optional hover effect */
+}
+
 
