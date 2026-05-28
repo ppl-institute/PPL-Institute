@@ -405,7 +405,7 @@ form input[type="email"] {
   background: #F5F5F5;
   border-radius: 12px;
   padding: 1rem; /* slightly reduced */
-  width: 100%;
+  width: 240px;
   height: auto; /* allow card to grow if needed */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -523,7 +523,7 @@ main h3 {
   background: #d5ffdd;
   border-radius: 12px;
   padding: 1rem; /* slightly reduced */
-  width: 100%;
+  width: 240px;
   height: auto; /* allow card to grow if needed */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -603,7 +603,7 @@ main h3 {
   background: #fffeb3;
   border-radius: 12px;
   padding: 1rem; /* slightly reduced */
-  width: 100%;
+  width: 240px;
   height: auto; /* allow card to grow if needed */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -685,7 +685,7 @@ main h3 {
   background: #c0e6fe;
   border-radius: 12px;
   padding: 1rem; /* slightly reduced */
-  width: 100%;
+  width: 240px;
   height: auto; /* allow card to grow if needed */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -773,7 +773,7 @@ main h3 {
   background: #c0fec1;
   border-radius: 12px;
   padding: 1rem; /* slightly reduced */
-  width: 100%;
+  width: 240px;
   height: auto; /* allow card to grow if needed */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -847,23 +847,6 @@ main h3 {
 }
 
 
-@media (max-width: 768px) {
-  .survey-section {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 900px) {
-  .survey-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .survey-section {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 /* Show desktop menu only on larger screens */
