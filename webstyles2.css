@@ -848,6 +848,25 @@ main h3 {
 
 
 
+@media (max-width: 768px) {
+  .survey-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .survey-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .survey-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 /* Show desktop menu only on larger screens */
 .desktop-menu {
